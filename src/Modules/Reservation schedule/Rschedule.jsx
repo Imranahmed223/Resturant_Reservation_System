@@ -29,6 +29,14 @@ const Rschedule = () => {
               <div className="page-container-content-right-content-row2"></div>
               <div className="page-container-content-right-content-row3"></div>
               <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
+              <div className="page-container-content-right-content-row4"></div>
             </div>
           </div>
         </div>
@@ -38,3 +46,4 @@ const Rschedule = () => {
 };
 
 export default Rschedule;
+
