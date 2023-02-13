@@ -1,9 +1,13 @@
 import React from "react";
 import SideBar from "../../Common components/SideBar/SideBar";
 import "./Rschudule.scss";
-import Search from '../../assets/HomeAssets/search.png';
+import Search from "../../assets/HomeAssets/search.png";
 import Bell from "../../assets/HomeAssets/topIcon.svg";
 import proficon from "../../assets/HomeAssets/proficon.png";
+import calender from "../../assets/HomeAssets/calendar.png";
+import UserAdd from "../../assets/HomeAssets/userAdd.png";
+import plus from "../../assets/HomeAssets/plus.png";
+import arrowRight from "../../assets/HomeAssets/arrowright.png";
 const Rschedule = () => {
   return (
     <>
@@ -22,20 +26,84 @@ const Rschedule = () => {
                   <div className="page-container-content-right-content-row-bar-bellicon">
                     <img src={Bell} alt="bellicon" className="bimg" />
                   </div>
-                  <img src={proficon} alt="ProfileImg"  className="profileImg"/>
+                  <img src={proficon} alt="ProfileImg" className="profileImg" />
                 </div>
               </div>
-              <div className="page-container-content-right-content-row1"></div>
-              <div className="page-container-content-right-content-row2"></div>
+              <div className="page-container-content-right-content-row1">
+                <div className="page-container-content-right-content-row1-content">
+                  <div className="page-container-content-right-content-row1-content-calander">
+                    <img src={calender} alt="calender" />
+                    <p>Mon 05/12</p>
+                  </div>
+                  <div className="page-container-content-right-content-row1-content-seats">
+                    <div className="page-container-content-right-content-row1-content-seats-counts">
+                      <h1>0</h1>
+                      <div className="page-container-content-right-content-row1-content-seats-counts-img">
+                        <span>Available Seat</span>
+                        <img src={UserAdd} alt="UserAdd" />
+                      </div>
+                    </div>
+                    <div className="page-container-content-right-content-row1-content-seats-creats">
+                      <img src={plus} alt="plus" />
+                      <p>CREATE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="page-container-content-right-content-row2">
+                <div className="page-container-content-right-content-row2-content">
+                  <table>
+                    <thead>
+                      <th>9:00 - 9:30 AM</th>
+                      <th>9:30 - 10:00 AM</th>
+                      <th>10:00 - 10:30 AM</th>
+                      <th>10:30 - 11:00 AM</th>
+                      <th>11:00 - 11:30 AM</th>
+                      <th>11:30 - 12:00 AM</th>
+                      <th className="th-arrow">
+                        12:00 - 12:30 AM
+                        <img src={arrowRight} alt="arrow" />
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="td-green">
+                          <p>Alice</p>
+                          <p>People:2</p>
+                        </td>
+                        <td className="td-pink">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+                        <td className="td-lightyallow">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+                        <td className="td-lightblue">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+
+                        <td className="td-lightblue">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+
+                        <td className="td-lightblue">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+
+                        <td className="td-lightblue">
+                          <p>Bella</p>
+                          <p>People:4</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
               <div className="page-container-content-right-content-row3"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
-              <div className="page-container-content-right-content-row4"></div>
               <div className="page-container-content-right-content-row4"></div>
             </div>
           </div>
@@ -46,4 +114,3 @@ const Rschedule = () => {
 };
 
 export default Rschedule;
-
